@@ -14,6 +14,8 @@ namespace gitactionstest
             {
                 Console.WriteLine("Case Worker: " + caseWorker + " (" + ((int)Enum.Parse(typeof(Cases.CaseWorkers), caseWorker)).ToString() + ")");
             }
+            Console.WriteLine("press any key...");
+            Console.ReadLine();
         }
     }
 }
