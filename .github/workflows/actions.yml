@@ -34,7 +34,7 @@ jobs:
         uses: microsoft/vstest-action@v1.0.0
         with:
           testAssembly: Unittests.dll
-          searchFolder: ./UnitTests/
+          searchFolder: ./UnitTests/bin/
 
       - name: Test Case Workers
         id: run_vstest
