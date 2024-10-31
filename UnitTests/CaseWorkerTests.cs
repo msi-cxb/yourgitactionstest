@@ -19,7 +19,7 @@ namespace UnitTests
         [TestMethod]
         public void TestCaseWorkersCount()
         {
-            Assert.IsTrue(Enum.GetNames(typeof(Cases.CaseWorkers)).Length == 4);
+            Assert.IsTrue(Enum.GetNames(typeof(Cases.CaseWorkers)).Length == 3);
         }
     }
 }
