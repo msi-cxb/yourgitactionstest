@@ -31,7 +31,7 @@ jobs:
 
       - name: Setup VSTest and add to PATH
         # DEPRECATED
-        uses: microsoft-approved-actions/vstest@1.0.0
+        uses: microsoft-approved-actions/vstest@master
         id: setup_vstest
 
       - name: Test Case Workers
