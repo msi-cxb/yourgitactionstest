@@ -32,9 +32,6 @@ jobs:
       - name: Setup VSTest and add to PATH
         id: setup_vstest
         uses: microsoft/vstest-action@v1.0.0
-        with:
-          testAssembly: .\Unittests.dll
-          searchFolder: Unittests\bin\Debug
 
 #      - name: Test Case Workers
 #        id: run_vstest
