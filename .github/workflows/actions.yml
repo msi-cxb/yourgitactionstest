@@ -31,7 +31,8 @@ jobs:
 
       - name: Run VSTests
         id: setup_vstest
-        uses: rusty-bender/vstest-action@main
+        uses: josepho0918/vstest-action@main
+        # uses: rusty-bender/vstest-action@main
         # uses: danpetitt/vstest-action@main
         with:
           testAssembly: '**\\UnitTests.dll'
