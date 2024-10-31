@@ -1,7 +1,7 @@
 name: Validation of Console App
 on:
   pull_request:
-    branches: [ master, develop, release/*, hotfix/* ]
+    branches: [ main, develop, release/*, hotfix/* ]
     
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
