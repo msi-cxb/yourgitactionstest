@@ -31,13 +31,9 @@ jobs:
 
       - name: Run VSTests
         id: setup_vstest
-        uses: rusty-bender/vstest-action@main
+        # uses: rusty-bender/vstest-action@main
+        uses: danpetitt/vstest-action@main
         with:
           testAssembly: '**\\UnitTests.dll'
           searchFolder: .\UnitTests\bin\Debug\
           runInParallel: true
-
-#      - name: Test Case Workers
-#        id: run_vstest
-#        working-directory: UnitTests\bin\Debug
-#        run: vstest.console.exe .\UnitTests.dll /Tests:TestCaseWorkerIds,TestCaseWorkersCount
