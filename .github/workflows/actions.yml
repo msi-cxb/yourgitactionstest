@@ -29,9 +29,13 @@ jobs:
           nuget restore .\gitactionstest.sln
           msbuild .\gitactionstest.sln  /t:build /p:Configuration=Debug
 
-      - name: Setup VSTest and add to PATH
+      - name: Run VSTests
         id: setup_vstest
         uses: microsoft/vstest-action@v1.0.0
+        with:
+          testAssembly: UnitTests.dll
+          searchFolder: .\UnitTests\bin\Debug\
+          runInParallel: true
 
 #      - name: Test Case Workers
 #        id: run_vstest
