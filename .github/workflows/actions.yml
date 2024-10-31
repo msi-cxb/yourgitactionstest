@@ -2,7 +2,10 @@ name: Validation of Console App
 on:
   pull_request:
     branches: [ master, develop, release/*, hotfix/* ]
-
+    
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
 jobs:
   run-selected-unittests:
     runs-on: windows-latest
