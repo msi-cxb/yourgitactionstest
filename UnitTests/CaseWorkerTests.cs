@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using gitactionstest;
 
-namespace Unittests
+namespace UnitTests
 {
     [TestClass]
     public class CaseWorkerTests
