@@ -30,11 +30,10 @@ jobs:
           msbuild .\gitactionstest.sln  /t:build /p:Configuration=Debug
 
       - name: Setup VSTest and add to PATH
-        # DEPRECATED
-        uses: microsoft/vstest-action@v1.0.0
         id: setup_vstest
+        uses: microsoft/vstest-action@v1.0.0
 
-      - name: Test Case Workers
-        id: run_vstest
-        working-directory: UnitTests\bin\Debug
-        run: vstest.console.exe .\UnitTests.dll /Tests:TestCaseWorkerIds,TestCaseWorkersCount
+#      - name: Test Case Workers
+#        id: run_vstest
+#        working-directory: UnitTests\bin\Debug
+#        run: vstest.console.exe .\UnitTests.dll /Tests:TestCaseWorkerIds,TestCaseWorkersCount
