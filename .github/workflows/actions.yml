@@ -31,7 +31,7 @@ jobs:
 
       - name: Run VSTests
         id: setup_vstest
-        uses: rusty-bender/vstest-action@v1.0.0
+        uses: rusty-bender/vstest-action@main
         with:
           testAssembly: '**\\UnitTests.dll'
           searchFolder: .\UnitTests\bin\Debug\
