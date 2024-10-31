@@ -34,9 +34,9 @@ jobs:
         uses: microsoft/vstest-action@v1.0.0
         with:
           testAssembly: .\Unittests.dll
-          searchFolder: UnitTests\bin\Debug
+          searchFolder: Unittests\bin\Debug
 
-      - name: Test Case Workers
-        id: run_vstest
-        working-directory: UnitTests\bin\Debug
-        run: vstest.console.exe .\UnitTests.dll /Tests:TestCaseWorkerIds,TestCaseWorkersCount
+#      - name: Test Case Workers
+#        id: run_vstest
+#        working-directory: UnitTests\bin\Debug
+#        run: vstest.console.exe .\UnitTests.dll /Tests:TestCaseWorkerIds,TestCaseWorkersCount
